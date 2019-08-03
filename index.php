@@ -73,28 +73,4 @@
     </div>
 <!-- FIN HERO -->    
 
-<!-- FOOTER -->
-<footer>
-        <div class="row">
-            <div class="col">
-                    <div class="copy">
-                        <p>Copyright 2019</p>
-                    </div>
-                    <div class="create">
-                        <p>create by <a href="https://www.facebook.com/cyberzsoft/" target="_blan">CyberzSoft</a></p>
-                    </div>
-            </div>
-        </div>
-    </footer>
-    
-    <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
-    <!-- <script src='js/swiper.min.js'></script> -->
-    
-    <!-- <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-   crossorigin=""></script> -->
-
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    <!-- <script src="js/script.js"></script> -->
-
 <?php get_footer();?>
