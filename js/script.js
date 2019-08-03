@@ -1,6 +1,5 @@
 /*Efecto cuando se haga scroll */
 $(function() {
-  alert("Hola");
 
   /**Ancho de pantalla */
   var ancho = $(window).width();    
