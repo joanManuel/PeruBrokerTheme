@@ -212,7 +212,7 @@ height: 100vh;
 }
 
 section.hero .img-hero{
-    background-image: url("./img/portada_1.jpg");
+    background-image: url(./img/portada_1.jpg);
     height: 100vh;
     background-position: top center;
     background-size: cover;
@@ -283,10 +283,7 @@ section.hero .chat{
     z-index: 95;
 
 }
-section.hero .chat img.messenger{
-    
-    
-}
+
 /*NOSOTROS*/
 section.nosotros{
     margin-bottom: 38px;
@@ -642,35 +639,35 @@ section.contacto .content-info a{
     color: #0A123A;
 }
 section.contacto .content-info p.direccion::before{
-    content: url(../img/icon-direc.svg);
+    content: url(./img/icon-direc.svg);
     position: relative;
     display: inline-block;
     margin-right: 15px;
     top: 5px;
 }
 section.contacto .content-info p.telefono::before{
-    content: url(../img/icon-telef.svg);
+    content: url(./img/icon-telef.svg);
     position: relative;
     display: inline-block;
     margin-right: 15px;
     top: 5px;
 }
 section.contacto .content-info p.correo::before{
-    content: url(../img/icon-correo.svg);
+    content: url(./img/icon-correo.svg);
     position: relative;
     display: inline-block;
     margin-right: 15px;
     top: 5px;
 }
 section.contacto .content-info p.fax::before{
-    content: url(../img/icon-fax.svg);
+    content: url(./img/icon-fax.svg);
     position: relative;
     display: inline-block;
     margin-right: 15px;
     top: 5px;
 }
 section.contacto .content-info p.facebook::before{
-    content: url(../img/icon-facebook.svg);
+    content: url(./img/icon-facebook.svg);
     position: relative;
     display: inline-block;
     margin-right: 15px;
@@ -907,6 +904,7 @@ nav.lista-menu{
         top: 0!important;
         background: rgba(23, 41, 131,.9)!important;
         width: 100%!important;
+        box-shadow: 0 0 10px rgba(0,0,0,.5)!important;
     }
     
     .fixed .content-menu{

@@ -1,19 +1,20 @@
+var $ = jQuery;
 /*Efecto cuando se haga scroll */
-jQuery(function() {
+$(function() {
 
   /**Ancho de pantalla */
-  var ancho = jQuery(window).width();    
+  var ancho = $(window).width();    
   var point = 992;
 
   //Animación del navbar(menu) en pantalla movil
   if(ancho <= point){
-    jQuery('nav.lista-menu').on('click', function() {
-      jQuery('.bar').toggleClass('animate'),
-      jQuery('header .menu').toggleClass('color-header');
+    $('nav.lista-menu').on('click', function() {
+          $('.bar').toggleClass('animate'),
+          $('header .menu').toggleClass('color-header');
     })
     // Oculta el menu
-    jQuery('nav.lista-menu').on('click', function() {
-      jQuery('nav.lista-menu ul').toggle();
+    $('nav.lista-menu').on('click', function() {
+      $('nav.lista-menu ul').toggle();
   
     })
   }
@@ -37,32 +38,32 @@ jQuery(function() {
   }
 
   /* EFECTO PARA CUANDO SE HAGA SCROLL */
-  jQuery(document).on("scroll", scroll);
+  $(document).on("scroll", scroll);
     
-  menu = jQuery('header ul li a');
+  menu = $('header ul li a');
 
   menu.on('click', function() {
-    var to = jQuery(this).attr('href'); 
+    var to = $(this).attr('href'); 
 
-    jQuery('header ul li a').removeClass('active-menu');
-    jQuery('html, body').animate({ scrollTop: (jQuery(to).offset().top)-75}, 700);
+    $('header ul li a').removeClass('active-menu');
+    $('html, body').animate({ scrollTop: ($(to).offset().top)-75}, 700);
     if(ancho <= point){
-        jQuery('nav.lista-menu ul').toggle();
-        jQuery('.bar').toggleClass('animate'),
-        jQuery('header .menu').removeClass('color-header');
+        $('nav.lista-menu ul').toggle();
+        $('.bar').toggleClass('animate'),
+        $('header .menu').removeClass('color-header');
     }
-    jQuery(this).addClass('active-menu');
-    jQuery('header ul li a:first').removeClass('active-menu');
+    $(this).addClass('active-menu');
+    $('header ul li a:first').removeClass('active-menu');
   
     return false;
   });
 });
 
 function scroll(event){
-  var scrollPos = jQuery(document).scrollTop();
+  var scrollPos = $(document).scrollTop();
   menu.each(function () {
-      var currLink = jQuery(this);
-      var refElement = jQuery(currLink.attr("href"));
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
       if ((refElement.position().top)-80 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
         
           menu.removeClass("active-menu");
@@ -74,22 +75,22 @@ function scroll(event){
   });
 }
 
-jQuery(function () {
+$(function () {
   /* Par alos efectos cuando se haga scroll */
   AOS.init();
 
   // BOTON PARA SUBIR
-  jQuery('.btn-up').click(function(){
-    jQuery('body, html').animate({
+  $('.btn-up').click(function(){
+    $('body, html').animate({
     scrollTop: '0px'
     }, 300);
   });
    
-  jQuery(window).scroll(function(){
-    if( jQuery(this).scrollTop() > 0 ){
-      jQuery('.btn-up').slideDown(300);
+  $(window).scroll(function(){
+    if( $(this).scrollTop() > 0 ){
+      $('.btn-up').slideDown(300);
       } else {
-      jQuery('.btn-up').slideUp(300);
+      $('.btn-up').slideUp(300);
       }
     });
  
@@ -102,16 +103,16 @@ jQuery(function () {
   });
 
   /* TABS */
-  jQuery('.tabs-buttons ul li a:first').addClass('active-tab');
-  jQuery('.contenido-item .item:first').show();
+  $('.tabs-buttons ul li a:first').addClass('active-tab');
+  $('.contenido-item .item:first').show();
 
-  jQuery('.tabs-buttons a').on('click',function(){
-    jQuery('.tabs-buttons ul li a').removeClass('active-tab');
-    jQuery('.ocultar').hide();
-    jQuery(this).addClass('active-tab');
+  $('.tabs-buttons a').on('click',function(){
+    $('.tabs-buttons ul li a').removeClass('active-tab');
+    $('.ocultar').hide();
+    $(this).addClass('active-tab');
 
-    var enlace = jQuery(this).attr('href');
-      jQuery(enlace).fadeIn(500);
+    var enlace = $(this).attr('href');
+      $(enlace).fadeIn(500);
     return false;
   });
 
