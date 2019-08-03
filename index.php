@@ -79,20 +79,6 @@
             </div>
         </div>
     </footer>
-<<<<<<< HEAD
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src='js/swiper.min.js'></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script> -->
-    
-    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-   crossorigin=""></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/script.js"></script>
-</body>
-</html>
-=======
     
     <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
     <!-- <script src='js/swiper.min.js'></script> -->
@@ -105,4 +91,3 @@
     <!-- <script src="js/script.js"></script> -->
 
 <?php get_footer();?>
->>>>>>> 5d5b60c62f94ef2266383d9d3339212883121409
