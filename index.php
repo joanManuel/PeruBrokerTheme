@@ -73,6 +73,7 @@
     </div>
 <!-- FIN HERO -->    
 
+<<<<<<< HEAD
 <!-- FOOTER -->
 
     
@@ -86,4 +87,6 @@
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <!-- <script src="js/script.js"></script> -->
 
+=======
+>>>>>>> 7944cf705ec251d013c1eff8607af8aa513a7830
 <?php get_footer();?>
