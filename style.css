@@ -238,7 +238,7 @@ section.hero .idioma .es{
 
 }
 section.hero .idioma .es::before{
-content: url(../img/es.png);
+content: url(./img/es.png);
 margin-right: 5px;
 font-size: 12px;
 }
@@ -246,7 +246,7 @@ font-size: 12px;
 section.hero .idioma .en{
 }
 section.hero .idioma .en::before{
-    content: url(../img/en.png);
+    content: url(./img/en.png);
     margin-right: 5px;
 }
 section.hero .btn-up{
