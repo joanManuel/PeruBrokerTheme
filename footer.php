@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 <!-- FOOTER -->
->>>>>>> 7944cf705ec251d013c1eff8607af8aa513a7830
 <footer>
         <div class="row">
             <div class="col">
