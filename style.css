@@ -199,7 +199,7 @@ height: 100vh;
 }
 
 section.hero .img-hero{
-    background-image: url(../img/portada_1.jpg);
+    background-image: url(./img/portada_1.jpg);
     height: 100vh;
     background-position: top center;
     background-size: cover;
@@ -225,7 +225,7 @@ section.hero .idioma .es{
 
 }
 section.hero .idioma .es::before{
-content: url(../img/es.png);
+content: url(./img/es.png);
 margin-right: 5px;
 font-size: 12px;
 }
@@ -233,7 +233,7 @@ font-size: 12px;
 section.hero .idioma .en{
 }
 section.hero .idioma .en::before{
-    content: url(../img/en.png);
+    content: url(./img/en.png);
     margin-right: 5px;
 }
 section.hero .btn-up{
@@ -626,35 +626,35 @@ section.contacto .content-info a{
     color: #0A123A;
 }
 section.contacto .content-info p.direccion::before{
-    content: url(../img/icon-direc.svg);
+    content: url(./img/icon-direc.svg);
     position: relative;
     display: inline-block;
     margin-right: 15px;
     top: 5px;
 }
 section.contacto .content-info p.telefono::before{
-    content: url(../img/icon-telef.svg);
+    content: url(./img/icon-telef.svg);
     position: relative;
     display: inline-block;
     margin-right: 15px;
     top: 5px;
 }
 section.contacto .content-info p.correo::before{
-    content: url(../img/icon-correo.svg);
+    content: url(./img/icon-correo.svg);
     position: relative;
     display: inline-block;
     margin-right: 15px;
     top: 5px;
 }
 section.contacto .content-info p.fax::before{
-    content: url(../img/icon-fax.svg);
+    content: url(./img/icon-fax.svg);
     position: relative;
     display: inline-block;
     margin-right: 15px;
     top: 5px;
 }
 section.contacto .content-info p.facebook::before{
-    content: url(../img/icon-facebook.svg);
+    content: url(./img/icon-facebook.svg);
     position: relative;
     display: inline-block;
     margin-right: 15px;
