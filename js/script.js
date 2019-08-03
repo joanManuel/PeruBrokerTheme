@@ -1,19 +1,19 @@
 /*Efecto cuando se haga scroll */
-$(function() {
+jQuery(function() {
 
   /**Ancho de pantalla */
-  var ancho = $(window).width();    
+  var ancho = jQuery(window).width();    
   var point = 992;
 
   //Animación del navbar(menu) en pantalla movil
   if(ancho <= point){
-    $('nav.lista-menu').on('click', function() {
-          $('.bar').toggleClass('animate'),
-          $('header .menu').toggleClass('color-header');
+    jQuery('nav.lista-menu').on('click', function() {
+      jQuery('.bar').toggleClass('animate'),
+      jQuery('header .menu').toggleClass('color-header');
     })
     // Oculta el menu
-    $('nav.lista-menu').on('click', function() {
-      $('nav.lista-menu ul').toggle();
+    jQuery('nav.lista-menu').on('click', function() {
+      jQuery('nav.lista-menu ul').toggle();
   
     })
   }
@@ -37,32 +37,32 @@ $(function() {
   }
 
   /* EFECTO PARA CUANDO SE HAGA SCROLL */
-  $(document).on("scroll", scroll);
+  jQuery(document).on("scroll", scroll);
     
-  menu = $('header ul li a');
+  menu = jQuery('header ul li a');
 
   menu.on('click', function() {
-    var to = $(this).attr('href'); 
+    var to = jQuery(this).attr('href'); 
 
-    $('header ul li a').removeClass('active-menu');
-    $('html, body').animate({ scrollTop: ($(to).offset().top)-75}, 700);
+    jQuery('header ul li a').removeClass('active-menu');
+    jQuery('html, body').animate({ scrollTop: (jQuery(to).offset().top)-75}, 700);
     if(ancho <= point){
-        $('nav.lista-menu ul').toggle();
-        $('.bar').toggleClass('animate'),
-        $('header .menu').removeClass('color-header');
+        jQuery('nav.lista-menu ul').toggle();
+        jQuery('.bar').toggleClass('animate'),
+        jQuery('header .menu').removeClass('color-header');
     }
-    $(this).addClass('active-menu');
-    $('header ul li a:first').removeClass('active-menu');
+    jQuery(this).addClass('active-menu');
+    jQuery('header ul li a:first').removeClass('active-menu');
   
     return false;
   });
 });
 
 function scroll(event){
-  var scrollPos = $(document).scrollTop();
+  var scrollPos = jQuery(document).scrollTop();
   menu.each(function () {
-      var currLink = $(this);
-      var refElement = $(currLink.attr("href"));
+      var currLink = jQuery(this);
+      var refElement = jQuery(currLink.attr("href"));
       if ((refElement.position().top)-80 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
         
           menu.removeClass("active-menu");
@@ -74,22 +74,22 @@ function scroll(event){
   });
 }
 
-$(function () {
+jQuery(function () {
   /* Par alos efectos cuando se haga scroll */
   AOS.init();
 
   // BOTON PARA SUBIR
-  $('.btn-up').click(function(){
-    $('body, html').animate({
+  jQuery('.btn-up').click(function(){
+    jQuery('body, html').animate({
     scrollTop: '0px'
     }, 300);
   });
    
-  $(window).scroll(function(){
-    if( $(this).scrollTop() > 0 ){
-      $('.btn-up').slideDown(300);
+  jQuery(window).scroll(function(){
+    if( jQuery(this).scrollTop() > 0 ){
+      jQuery('.btn-up').slideDown(300);
       } else {
-      $('.btn-up').slideUp(300);
+      jQuery('.btn-up').slideUp(300);
       }
     });
  
@@ -102,16 +102,16 @@ $(function () {
   });
 
   /* TABS */
-  $('.tabs-buttons ul li a:first').addClass('active-tab');
-  $('.contenido-item .item:first').show();
+  jQuery('.tabs-buttons ul li a:first').addClass('active-tab');
+  jQuery('.contenido-item .item:first').show();
 
-  $('.tabs-buttons a').on('click',function(){
-    $('.tabs-buttons ul li a').removeClass('active-tab');
-    $('.ocultar').hide();
-    $(this).addClass('active-tab');
+  jQuery('.tabs-buttons a').on('click',function(){
+    jQuery('.tabs-buttons ul li a').removeClass('active-tab');
+    jQuery('.ocultar').hide();
+    jQuery(this).addClass('active-tab');
 
-    var enlace = $(this).attr('href');
-      $(enlace).fadeIn(500);
+    var enlace = jQuery(this).attr('href');
+      jQuery(enlace).fadeIn(500);
     return false;
   });
 
