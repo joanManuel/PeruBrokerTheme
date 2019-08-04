@@ -35,7 +35,7 @@
                                     </div>
                                     <div class="col">
                                         <figure>
-                                            <img src="img/historia_logo_perubroker.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/historia_logo_perubroker.png" alt="">
                                         </figure>
                                     </div>
                                 </div>
