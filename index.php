@@ -72,5 +72,5 @@
         </div>
     </div>
 <!-- FIN HERO -->    
-
+<?php get_template_part('template-parts/nosotros');?>
 <?php get_footer();?>
