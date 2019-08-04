@@ -37,7 +37,8 @@ function perubroker_scripts_styles(){
 
     wp_enqueue_script('jquery');
     wp_enqueue_script('script', get_template_directory_uri().'/js/script.js',array('jquery'),'1.0.0',true);
-    
+ 
+    wp_enqueue_script('swiper', get_template_directory_uri().'/js/swiper.min.js',array('jquery'),'3.4.2',true);
     // wp_enqueue_script('scripts');
     // wp_enqueue_script('jquery-3.4.1',get_template_directory_uri().'/js/jquery-3.4.1.js',array('jquery-3.4.1'),'3.4.1',true);
 }
