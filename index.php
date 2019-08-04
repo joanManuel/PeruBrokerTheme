@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> b6e5aed517ca9e514505766850e5fef0d28ce7a8
 <?php get_header(); ?>
 <!-- HERO -->
 <div class="row">
