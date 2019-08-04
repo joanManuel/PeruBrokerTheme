@@ -24,22 +24,14 @@
                 </div>
 
                 <!-- MENU -->
-<<<<<<< HEAD
                 <!-- <nav class="lista-menu"> -->
-=======
-                <nav class="lista-menu">
->>>>>>> b6e5aed517ca9e514505766850e5fef0d28ce7a8
                     <div class="bar"></div>
                     <?php
             $args = array(
                 'theme_location' => 'menu-principal',
                 'container' => 'nav',
-<<<<<<< HEAD
                 'container_class' =>'lista-menu',
                 'menu_class' => 'goto'
-=======
-                'container_class' =>'menu-principal'
->>>>>>> b6e5aed517ca9e514505766850e5fef0d28ce7a8
                 );
                 wp_nav_menu($args);
             ?>
@@ -49,11 +41,7 @@
                         <li><a href="#clientes"class="goto ">Clientes</a></li>
                         <li><a href="#reportes"class="goto ">Reportes</a></li>
                         <li><a href="#contacto"class="goto ">Contacto</a></li> -->
-<<<<<<< HEAD
                 <!-- </nav> -->
-=======
-                </nav>
->>>>>>> b6e5aed517ca9e514505766850e5fef0d28ce7a8
 
             </div>
         </div>
