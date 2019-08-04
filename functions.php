@@ -23,6 +23,8 @@ function perubroker_scripts_styles(){
 
     wp_enqueue_style('aos','https://unpkg.com/aos@2.3.1/dist/aos.css',array(),'2.3.1');
 
+
+
     //La hoja de estilos principal, cambiar versión para que refresque el cache.
     wp_enqueue_style('style', get_stylesheet_uri(),array('bootstrap-grid','normalize','googleFont','googleFont2','swiper','leaflet','aos'), '1.0.0');
 
@@ -35,6 +37,7 @@ function perubroker_scripts_styles(){
 
     wp_enqueue_script('jquery');
     wp_enqueue_script('script', get_template_directory_uri().'/js/script.js',array('jquery'),'1.0.0',true);
+    
     // wp_enqueue_script('scripts');
     // wp_enqueue_script('jquery-3.4.1',get_template_directory_uri().'/js/jquery-3.4.1.js',array('jquery-3.4.1'),'3.4.1',true);
 }
