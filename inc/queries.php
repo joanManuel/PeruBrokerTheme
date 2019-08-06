@@ -44,7 +44,7 @@ function broker_lista_contenido_secciones(){ ?>
                                      </div>
                                      <div class="col">
                                             <figure>
-                                                           <?php the_post_thumbnail('full'); ?>
+                                                <?php the_post_thumbnail('full'); ?>
                                             </figure>
                                         </div>
                                 </div>
@@ -53,3 +53,31 @@ function broker_lista_contenido_secciones(){ ?>
 <?php
 }
 ?>
+
+
+
+<?php
+function mostrar_staff(){ ?>
+        <?php 
+            $args = array(
+                    'post_type' => 'broker_Staff',
+                    'posts_per_page' => -1,   //-1 te trae todos
+                    'orderby' => 'meta_value_num',
+                    'order' => 'ASC'
+            );
+            
+            $clases = new WP_Query($args);
+            while ($clases->have_posts() ): $clases -> the_post();
+           
+            ?>
+            
+            <div class="item-staff swiper-slide">
+                <figure class="img-staff">
+                    <?php the_post_thumbnail('full'); ?>
+                </figure>
+                <p><?php the_field('nombre') ?></p>
+                <span><?php the_field('puesto') ?></span>
+            </div>
+        <?php endwhile; wp_reset_postdata(); ?> 
+<?php
+}
