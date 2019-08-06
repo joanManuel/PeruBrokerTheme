@@ -1,3 +1,4 @@
+
 <?php get_header(); ?>
 <!-- HERO -->
 <div class="row">
@@ -25,8 +26,5 @@
         </div>
     </div>
 <!-- FIN HERO -->    
-
-
-<?php get_template_part('template-parts/nosotros'); ?>
-
+<?php get_template_part('template-parts/nosotros');?>
 <?php get_footer();?>

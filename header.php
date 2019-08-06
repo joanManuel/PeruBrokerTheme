@@ -24,14 +24,13 @@
                 </div>
 
                 <!-- MENU -->
-                <!-- <nav class="lista-menu"> -->
+                <nav class="lista-menu">
                     <div class="bar"></div>
                     <?php
             $args = array(
                 'theme_location' => 'menu-principal',
                 'container' => 'nav',
-                'container_class' =>'lista-menu',
-                'menu_class' => 'goto'
+                'container_class' =>'menu-principal'
                 );
                 wp_nav_menu($args);
             ?>
@@ -41,7 +40,7 @@
                         <li><a href="#clientes"class="goto ">Clientes</a></li>
                         <li><a href="#reportes"class="goto ">Reportes</a></li>
                         <li><a href="#contacto"class="goto ">Contacto</a></li> -->
-                <!-- </nav> -->
+                </nav>
 
             </div>
         </div>
