@@ -29,5 +29,6 @@
 <?php get_template_part('template-parts/nosotros');?>
 <?php get_template_part('template-parts/staff');?>
 <?php get_template_part('template-parts/servicios');?>
+<?php get_template_part('template-parts/clientes');?>
 
 <?php get_footer();?>

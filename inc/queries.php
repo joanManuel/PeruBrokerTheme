@@ -116,3 +116,18 @@ function mostrar_servicios(){ ?>
 <?php
     }
 ?>
+
+<?php 
+function mostrar_clientes(){ ?>
+<?php 
+
+    }
+?>
+
+<!-- <div class="item-clientes swiper-slide">
+    <figure class="img-staff">
+        <img src="img/staff.png" alt="">
+    </figure>
+    
+    <p>Nombre del cliente</p>
+</div> -->
