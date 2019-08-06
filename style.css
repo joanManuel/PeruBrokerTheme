@@ -296,7 +296,9 @@ section.nosotros::before{
     height: 7px;
     background: #F7F7F7;
 }
-
+section.nosotros .contenido-item{
+    text-align: justify;
+}
     /*TABS*/
     .swiper-container {
         width: 100%;
