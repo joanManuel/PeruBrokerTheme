@@ -33,21 +33,12 @@ function perubroker_scripts_styles(){
     //La hoja de estilos principal, cambiar versión para que refresque el cache.
     wp_enqueue_style('style', get_stylesheet_uri(),array('bootstrap-grid','normalize','googleFont','googleFont2','swiper','leaflet','aos'), '1.0.0');
 
-    //wp_enqueue_script('slicknavJS',get_template_directory_uri().'/js/jquery.slicknav.min.js',array('jquery'),'1.0.0',true);
-
-    // wp_enqueue_script('jquery','https://code.jquery.com/jquery-3.4.1.slim.min.js',array(),'3.4.1');
-    // wp_enqueue_script('jquery');
-
-    // wp_register_script('scripts',get_template_directory_uri().'/js/script.js',array(),'1.0.0',true);//true es para que lo cargue en el footer
-
     wp_enqueue_script('jquery');
     wp_enqueue_script('swiper', get_template_directory_uri().'/js/swiper.min.js',array('jquery'),'3.4.2',true);
     wp_enqueue_script('leaflet','https://unpkg.com/leaflet@1.5.1/dist/leaflet.js',array('swiper'),"1.5.1",true);
     wp_enqueue_script('aos','https://unpkg.com/aos@2.3.1/dist/aos.js',array(),"2.3.1",true);
     wp_enqueue_script('script', get_template_directory_uri().'/js/script.js',array('jquery','swiper','leaflet','aos'),'1.0.0',true);
-   
-    // wp_enqueue_script('scripts');
-    // wp_enqueue_script('jquery-3.4.1',get_template_directory_uri().'/js/jquery-3.4.1.js',array('jquery-3.4.1'),'3.4.1',true);
+
 }
 add_action('wp_enqueue_scripts','perubroker_scripts_styles');
 

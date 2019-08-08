@@ -117,17 +117,32 @@ function mostrar_servicios(){ ?>
     }
 ?>
 
+
 <?php 
 function mostrar_clientes(){ ?>
-<?php 
-
+    <?php 
+            $args = array(
+                    'post_type' => 'broker_clientes',
+                    'posts_per_page' => -1,   //-1 te trae todos
+                     'orderby' => 'meta_value_num',
+                    'order' => 'ASC'
+            );
+           
+            $clases = new WP_Query($args);
+            while ($clases->have_posts() ): $clases -> the_post();
+            
+            ?>
+            
+            <div class="item-clientes swiper-slide">
+                <figure class="img-staff">
+                    <?php the_post_thumbnail('full'); ?>
+                </figure>
+                
+                <p><?php the_title(); ?></p>
+            </div>
+        <?php endwhile; wp_reset_postdata(); ?> 
+<?php
     }
 ?>
 
-<!-- <div class="item-clientes swiper-slide">
-    <figure class="img-staff">
-        <img src="img/staff.png" alt="">
-    </figure>
-    
-    <p>Nombre del cliente</p>
-</div> -->
+
