@@ -146,3 +146,20 @@ function mostrar_clientes(){ ?>
 ?>
 
 
+<?php 
+function mostrar_contacto(){ ?>
+    <?php 
+            $args = array(
+                    'post_type' => 'broker_contacto'
+            );
+           
+            $clases = new WP_Query($args);
+            while ($clases->have_posts() ): $clases -> the_post();
+            ?>
+            <?php the_content(); ?>
+        <?php endwhile; wp_reset_postdata(); ?> 
+<?php
+    }
+?>
+
+

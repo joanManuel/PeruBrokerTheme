@@ -719,6 +719,11 @@ form.wpcf7-form p textarea{
     height: 124px;
     border: 1px solid #6470AC;
 }
+.wpcf7-mail-sent-ok{
+    text-align: center;
+    color:  #398f14;
+    border: none;
+}
 
 /*FIN DE CONTACTO*/
 
