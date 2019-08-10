@@ -709,7 +709,7 @@ form.wpcf7-form p input[type=submit]{
     height: 50;
     font-size: 18px;
     padding: 14px 50px;
-    margin: 35px auto;
+    margin: 35px auto 10px auto;
     display: block;
     border: none;
     color: white;
@@ -718,11 +718,13 @@ form.wpcf7-form p textarea{
     width: 100%;
     height: 124px;
     border: 1px solid #6470AC;
+    max-width: 404px;
 }
-.wpcf7-mail-sent-ok{
+form.wpcf7-form .wpcf7-mail-sent-ok{
     text-align: center;
     color:  #398f14;
     border: none;
+    margin-top: 0;
 }
 
 /*FIN DE CONTACTO*/
