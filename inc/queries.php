@@ -147,15 +147,39 @@ function mostrar_clientes(){ ?>
 
 
 <?php 
-function mostrar_contacto(){ ?>
+function mostrar_contacto_formulario(){ ?>
     <?php 
             $args = array(
-                    'post_type' => 'broker_contacto'
+                    'post_type' => 'broker_contacto',
+                    'posts_per_page' => 1,
+                    'orderby' => 'meta_value_num',
+                    'order' => 'ASC'
             );
            
             $clases = new WP_Query($args);
             while ($clases->have_posts() ): $clases -> the_post();
             ?>
+            <?php the_content(); ?>
+        <?php endwhile; wp_reset_postdata(); ?> 
+<?php
+    }
+?>
+
+<?php 
+function mostrar_contacto_mapa(){ ?>
+    <?php 
+            $args = array(
+                    'post_type' => 'broker_contacto',
+                    'posts_per_page' => 1,
+                    'orderby' => 'meta_value_num',
+                    'order' => 'DESC'
+            );
+           
+            $clases = new WP_Query($args);
+            while ($clases->have_posts() ): $clases -> the_post();
+            ?>
+
+            
             <?php the_content(); ?>
         <?php endwhile; wp_reset_postdata(); ?> 
 <?php

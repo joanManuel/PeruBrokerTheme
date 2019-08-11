@@ -8,7 +8,8 @@
             <div class="col-12 col-lg-6 order-lg-2">
                 <!-- <h3>Mapa</h3> -->
                 <div class="content-mapa">
-                    <div id="map" class="map"></div>
+                    <!-- <div id="map" class="map"></div> -->
+                    <?php mostrar_contacto_mapa(); ?>
                 </div>
                 <div class="content-info">
                     <p class="direccion" >Av. Alfredo Benavides Nº 1579 - Of. 604, San Jorge - Miraflores</p>
@@ -21,7 +22,7 @@
         
             <div class="col-12 col-lg-6 order-lg-1">
                 <!-- FORMULARIO -->
-                <?php mostrar_contacto(); ?>
+                <?php mostrar_contacto_formulario(); ?>
                 <!-- FORMULARIO -->
 
                 <!-- <form class="wpcf7-form" action="">
