@@ -619,6 +619,9 @@ section.contacto .content-mapa .map{
     width: 100%;
     height: 242px;
 }
+section.contacto .content-mapa .leaflet-map{
+z-index: 85;
+}
 section.contacto .content-mapa .map .leaflet-pane{
     z-index: 40;
 }

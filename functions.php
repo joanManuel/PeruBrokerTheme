@@ -1,7 +1,6 @@
 <?php
 /** Consultas reutilizables  **/
 require get_template_directory().'/inc/queries.php';
-require get_template_directory().'/inc/shortcodes.php';
 
 function perubroker_setup(){
     //Habiliar imagenes destacadas

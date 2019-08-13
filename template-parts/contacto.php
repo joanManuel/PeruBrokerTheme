@@ -7,17 +7,9 @@
             </div>
             <div class="col-12 col-lg-6 order-lg-2">
                 <!-- <h3>Mapa</h3> -->
-                <div class="content-mapa">
                     <!-- <div id="map" class="map"></div> -->
                     <?php mostrar_contacto_mapa(); ?>
-                </div>
-                <div class="content-info">
-                    <p class="direccion" >Av. Alfredo Benavides Nº 1579 - Of. 604, San Jorge - Miraflores</p>
-                    <p class="telefono">(511) 241 0463</p>
-                    <p class="correo">pb@perubroker.com.pe</p>
-                    <p class="fax">242 5626</p>
-                    <p class="facebook"><a href="#">www.facebook.com/perubroker</a></p>
-                </div>
+                
             </div>
         
             <div class="col-12 col-lg-6 order-lg-1">

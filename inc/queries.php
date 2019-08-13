@@ -178,12 +178,19 @@ function mostrar_contacto_mapa(){ ?>
             $clases = new WP_Query($args);
             while ($clases->have_posts() ): $clases -> the_post();
             ?>
+            <div class="content-mapa">
+                <?php the_content(); ?>
+            </div>
 
-            
-            <?php the_content(); ?>
+            <div class="content-info">
+                <p class="direccion" ><?php the_field('direccion');?></p>
+                <p class="telefono"><?php the_field('telefono');?></p>
+                <p class="correo"><?php the_field('correo');?></p>
+                <p class="fax"><?php the_field('fax');?></p>
+                <p class="facebook"><a href="<?php the_field('link_facebook');?>"><?php the_field('nombre_facebook');?></a></p>
+            </div>
         <?php endwhile; wp_reset_postdata(); ?> 
 <?php
     }
 ?>
-
 
