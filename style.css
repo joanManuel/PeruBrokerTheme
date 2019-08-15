@@ -212,7 +212,7 @@ height: 100vh;
 }
 
 section.hero .img-hero{
-    background-image: url(./img/portada_1.jpg);
+    
     height: 100vh;
     background-position: top center;
     background-size: cover;

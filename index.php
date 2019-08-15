@@ -4,7 +4,8 @@
 <div class="row">
         <div class="col">
             <section class="hero">
-                <div class="img-hero">
+                
+                <div class="img-hero" style= "background-image: url(<?php mostrar_imagen_principal(); ?>)">
                     <!-- <video src="img/portada 1 animación.mp4" autoplay loop type="video/mp4" poster="img/portada_1.jpg" ></video>  -->
                 </div>
 

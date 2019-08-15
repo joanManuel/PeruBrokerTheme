@@ -1,3 +1,19 @@
+<?php
+function mostrar_imagen_principal(){ ?>
+        <?php 
+            $args = array(
+                    'post_type' => 'broker-imagen',
+                    'posts_per_page' => 1 
+            );  
+            $clases = new WP_Query($args);
+            while ($clases->have_posts() ): $clases -> the_post();
+        ?>
+            <?php the_post_thumbnail_url(); ?>
+        <?php endwhile; wp_reset_postdata(); ?> 
+<?php
+}
+?>
+
 <?php /***   SECCION DE NOSOTROS   ***/ ?>
 <?php
 function broker_lista_titulos_secciones(){ ?>

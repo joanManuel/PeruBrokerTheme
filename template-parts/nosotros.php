@@ -1,5 +1,4 @@
 <!-- Sección NOSOTROS -->
-<main>
 <section class="nosotros" id="nosotros">
         <div class="content" ><!-- INICIO-CONTENT -->
             <div class="row">
@@ -17,15 +16,13 @@
                       
                     <div class="tabs-content">
                         <div class=" contenido-item">
-
-                        <?php broker_lista_contenido_secciones(); ?>
-                           
+                            <?php broker_lista_contenido_secciones(); ?>
                         </div>
-                    
                     </div>
+                    
                 </div>
             </div>
         </div><!-- FIN-CONTENT -->
     </section>
 <!-- FIN Sección NOSOTROS -->   
-</main>
+
