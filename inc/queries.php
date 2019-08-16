@@ -55,16 +55,16 @@ function broker_lista_contenido_secciones(){ ?>
             $contador +=1;
             ?>
             <div id="item<?php echo $contador;?>" class="item ocultar">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-12 col-xl-9">
-                                        <?php the_content();?>  
-                                     </div>
-                                     <div class="col">
-                                            <figure>
-                                                <?php the_post_thumbnail('full'); ?>
-                                            </figure>
-                                        </div>
-                                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-12 col-xl-9">
+                        <?php the_content();?>  
+                        </div>
+                        <div class="col">
+                            <figure>
+                                <?php the_post_thumbnail('full'); ?>
+                            </figure>
+                        </div>
+                </div>
             </div>
         <?php endwhile; wp_reset_postdata(); ?> 
 <?php

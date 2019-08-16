@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset = "UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,18 +28,10 @@
                     <div class="bar"></div>
                     <?php
             $args = array(
-                'theme_location' => 'menu-principal',
-                'container' => 'nav',
-                'container_class' =>'menu-principal'
+                'theme_location' => 'menu-principal'
                 );
                 wp_nav_menu($args);
             ?>
-                        <!-- <li><a href="#inicio"class="goto active">Inicio</a></li>
-                        <li><a href="#nosotros"class="goto ">Nosotros</a></li>
-                        <li><a href="#servicios"class="goto ">Servicios</a></li>
-                        <li><a href="#clientes"class="goto ">Clientes</a></li>
-                        <li><a href="#reportes"class="goto ">Reportes</a></li>
-                        <li><a href="#contacto"class="goto ">Contacto</a></li> -->
                 </nav>
 
             </div>

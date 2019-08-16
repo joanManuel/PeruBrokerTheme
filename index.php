@@ -12,9 +12,7 @@
                 <div class="degradado1"></div>
                 <!-- <div class="degradado2"></div> -->
                 <div class="idioma">
-                    <span class="es">ES</span>
-                    <span>/</span>
-                    <span class="en">EN</span>
+                    <?php if ( function_exists ( 'wpm_language_switcher' ) ) wpm_language_switcher (); ?>
                 </div>
                 <div class="btn-up">
                     <img class="icon-up" src="<?php echo get_template_directory_uri(); ?>/img/up.svg">

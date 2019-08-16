@@ -10,6 +10,7 @@ add_action('after_setup_theme','perubroker_setup');
 // Menus de navegación, agregar más utilizando el arreglo
 function perubroker_menus(){
     register_nav_menus(array(
+        
         'menu-principal'=>__('Menu Principal','perubroker')
     ));
 }
@@ -41,7 +42,5 @@ function perubroker_scripts_styles(){
 
 }
 add_action('wp_enqueue_scripts','perubroker_scripts_styles');
-
-
 
 ?>

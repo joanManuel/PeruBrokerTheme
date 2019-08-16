@@ -230,25 +230,55 @@ section.hero .idioma{
     top: 90px;
     right: 50px;
 }
-section.hero .idioma{
+
+section.hero .switcher-list{
+   display: inline-flex;
+   
+}
+
+section.hero .switcher-list li{
+    margin-right: 10px;
+    font-size: 15px;
+    opacity: .6;
+}
+section.hero .switcher-list .active{
+    font-weight: bold;
+    opacity: 1;
+}
+
+section.hero .switcher-list li:last-child::before{
+    content: '/';
+    margin-right: 10px;
     color: white;
     font-weight: bold;
+    font-size: 15px;
 }
-section.hero .idioma .es{
-
-}
-section.hero .idioma .es::before{
-content: url(./img/es.png);
-margin-right: 5px;
-font-size: 12px;
+section.hero .switcher-list li a, section.hero .switcher-list li>span{
+    color: white;
 }
 
-section.hero .idioma .en{
+
+
+section.hero .idioma ul.wpm-language-switcher li.item-language-es{
+
+}
+section.hero .switcher-list li{
+/* content: url(./img/es.png); */
+
+}
+
+section.hero .idioma ul.wpm-language-switcher li.item-language-en{
 }
 section.hero .idioma .en::before{
-    content: url(./img/en.png);
+    /* content: url(./img/en.png); */
     margin-right: 5px;
 }
+
+section.hero .idioma ul > li > a{
+color: white;
+}
+
+
 section.hero .btn-up{
     
     position: fixed;
@@ -888,7 +918,7 @@ nav.lista-menu{
   }
     section.hero .idioma{
         top: 30px;
-        right: 50px;
+        right: 90px;
     }
     section.hero .chat{
         right: 60px;
