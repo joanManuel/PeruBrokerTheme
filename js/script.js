@@ -145,7 +145,7 @@ $(function () {
   var swiper = new Swiper('.content-item-clientes', {
       loop: true,
       slidesPerView: 'auto',
-      spaceBetween: 30,
+      spaceBetween: 20,
       centeredSlides: true,
       autoplay: {
           delay: 2500,

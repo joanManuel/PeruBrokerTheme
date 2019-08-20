@@ -3,7 +3,9 @@ function mostrar_imagen_principal(){ ?>
         <?php 
             $args = array(
                     'post_type' => 'broker-imagen',
-                    'posts_per_page' => 1 
+                    'posts_per_page' => 1,
+                    'orderby' => 'ID',
+                    'order' => 'ASC'
             );  
             $clases = new WP_Query($args);
             while ($clases->have_posts() ): $clases -> the_post();
@@ -13,6 +15,25 @@ function mostrar_imagen_principal(){ ?>
 <?php
 }
 ?>
+
+<?php
+function mostrar_mensaje_principal(){ ?>
+        <?php 
+            $args = array(
+                    'post_type' => 'broker-imagen',
+                    'posts_per_page' => 1,
+                    'orderby' => 'ID',
+                    'order' => 'DESC'
+            );  
+            $clases = new WP_Query($args);
+            while ($clases->have_posts() ): $clases -> the_post();
+        ?>
+            <?php the_content(); ?>
+        <?php endwhile; wp_reset_postdata(); ?> 
+<?php
+}
+?>
+
 
 <?php /***   SECCION DE NOSOTROS   ***/ ?>
 <?php
@@ -115,7 +136,7 @@ function mostrar_servicios(){ ?>
             while ($clases->have_posts() ): $clases -> the_post();
             
             ?>
-            <div class="row" data-aos="zoom-in-left" data-aos-duration="1000">
+            <div class="row">
                 <div class="col-sm-12">
                     <h3><?php the_title(); ?></h3>
                     <p><?php the_content();?>  </p>
@@ -168,7 +189,7 @@ function mostrar_contacto_formulario(){ ?>
             $args = array(
                     'post_type' => 'broker_contacto',
                     'posts_per_page' => 1,
-                    'orderby' => 'meta_value_num',
+                    'orderby' => 'ID',
                     'order' => 'ASC'
             );
            
@@ -187,7 +208,7 @@ function mostrar_contacto_mapa(){ ?>
             $args = array(
                     'post_type' => 'broker_contacto',
                     'posts_per_page' => 1,
-                    'orderby' => 'meta_value_num',
+                    'orderby' => 'ID',
                     'order' => 'DESC'
             );
            
@@ -209,4 +230,5 @@ function mostrar_contacto_mapa(){ ?>
 <?php
     }
 ?>
+
 

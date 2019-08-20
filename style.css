@@ -218,13 +218,6 @@ section.hero .img-hero{
     background-size: cover;
 }
 
-section.hero .degradado1{
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   top:0;
-   background: rgba(10, 18, 58, 0.05);
-}
 section.hero .idioma{
     position: absolute;
     top: 90px;
@@ -258,17 +251,6 @@ section.hero .switcher-list li a, section.hero .switcher-list li>span{
 }
 
 
-
-section.hero .idioma ul.wpm-language-switcher li.item-language-es{
-
-}
-section.hero .switcher-list li{
-/* content: url(./img/es.png); */
-
-}
-
-section.hero .idioma ul.wpm-language-switcher li.item-language-en{
-}
 section.hero .idioma .en::before{
     /* content: url(./img/en.png); */
     margin-right: 5px;
@@ -276,6 +258,20 @@ section.hero .idioma .en::before{
 
 section.hero .idioma ul > li > a{
 color: white;
+}
+
+section.hero .mensaje-principal{
+    position: relative;
+    top: -310px;
+    left: 15px;
+    height: auto;
+    width: 90%;
+    max-width: 450px;    
+}
+section.hero .mensaje-principal p{
+    font-size: 15px;
+    color: white;
+    text-align: justify;
 }
 
 
@@ -527,6 +523,7 @@ section.reportes .select {
     color: white;
     overflow: hidden;
     margin: 0 auto;
+    max-width: 200px;
   }
   section.reportes select {
     flex: 1;
@@ -557,9 +554,11 @@ section.reportes .select {
   section.reportes h3{
       margin-top: 40px;
   }
-section.reportes .content-reportes{
-    
-}
+  section.reportes .content-reportes .mensaje-reportes{
+      width: 100%;
+      min-width: 300px;
+  }
+
 section.reportes .content-reportes .table-responsive{
     overflow-y: auto;
 }
@@ -807,6 +806,11 @@ footer .create p a{
     section.contacto form{
         margin: 50px 0 60px 0;
     }
+    section.hero .mensaje-principal{
+        
+        /* left: 15px; */
+      
+    }
 }
 /* ESCRITORIO */
 @media only screen and (min-width: 992px){
@@ -914,12 +918,15 @@ nav.lista-menu{
   }
   nav.lista-menu ul li a:hover{
      
-      border-bottom: 2px solid red;
+      border-bottom: 2px solid rgba(226, 0, 26, 0.5);
   }
     section.hero .idioma{
         top: 30px;
         right: 90px;
     }
+
+   
+
     section.hero .chat{
         right: 60px;
     }

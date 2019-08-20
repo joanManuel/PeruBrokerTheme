@@ -3,7 +3,15 @@
         <div class="content"><!-- INICIO-CONTENT -->
         <div class="row">
             <div class="col-12">
-                <h2>Contacto</h2>
+            <?php
+                    $nav_menu_locations = get_nav_menu_locations();
+                    $menu_id = absint($nav_menu_locations["menu-principal"]);
+                    $menu_items = wp_get_nav_menu_items($menu_id);
+                    if (!empty($menu_items)) {
+                        echo "<h2>".$menu_items[5]->title."</h2>";
+                    }
+    
+                ?>
             </div>
             <div class="col-12 col-lg-6 order-lg-2">
                 <!-- <h3>Mapa</h3> -->

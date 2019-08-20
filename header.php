@@ -27,14 +27,14 @@
                 <nav class="lista-menu">
                     <div class="bar"></div>
                     <?php
-            $args = array(
-                'theme_location' => 'menu-principal'
-                );
-                wp_nav_menu($args);
-            ?>
+                        $args = array(
+                            'theme_location' => 'menu-principal'
+                            );
+                            wp_nav_menu($args);
+                        ?>
                 </nav>
 
             </div>
-        </div>
+        </div> 
     </header>    
     <!-- FIN - BARRA DE ARRIBA -->
