@@ -1,7 +1,4 @@
 <!-- SECCION DE REPORTES -->
-<div class="row">
-    <div class="col">
-
         <section class=" reportes tables-page-section" ="service" id="reportes" >
                     <div class="content content-reportes"><!-- INICIO-CONTENT -->
                         <div class="section_title text-center">
@@ -198,5 +195,3 @@
                   </div> <!-- FIN-CONTENT -->
             </section>
         <!-- FIN REPORTES -->
-    </div>
-</div>
