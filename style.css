@@ -261,17 +261,23 @@ color: white;
 }
 
 section.hero .mensaje-principal{
-    position: relative;
-    top: -310px;
-    left: 15px;
-    height: auto;
-    width: 90%;
-    max-width: 450px;    
+    position: absolute;
+    /* top: -310px; */
+    /* height: auto; */
+    width: 88%;
+    max-width: 450px; 
+    bottom: 60px;
+    left:  0;
+    right: 0; 
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.16);
+    padding: 12px;
 }
 section.hero .mensaje-principal p{
     font-size: 15px;
     color: white;
     text-align: justify;
+    line-height: 20px;
 }
 
 
@@ -806,10 +812,21 @@ footer .create p a{
     section.contacto form{
         margin: 50px 0 60px 0;
     }
+    
     section.hero .mensaje-principal{
         
-        /* left: 15px; */
-      
+        /* width: 95%; */
+        max-width: 620px; 
+        /* bottom: 100px; */
+        /* left:  0;
+        right: 0;  */
+        /* padding: 12px; */
+    }
+    section.hero .mensaje-principal p{
+         font-size: 20px;
+        /*color: white;
+        text-align: justify;*/
+        line-height: 28px; 
     }
 }
 /* ESCRITORIO */
@@ -895,6 +912,7 @@ nav.lista-menu{
     width: 620px;
     height: auto;
   }
+  
   nav.lista-menu ul li{
     margin: 0;
     padding: 10px 5px;
@@ -968,7 +986,10 @@ nav.lista-menu{
     .fixed .logo .text-logo h1{
         font-size: 18px!important;
     }
-    
+    section.hero .mensaje-principal{
+        max-width: 650px; 
+      
+    }
 }
 @media only screen and (min-width: 1070px){
     header .menu .content-menu .lista-menu{
@@ -1003,6 +1024,12 @@ nav.lista-menu{
         max-width: 510px;
         margin: 20px auto 50px auto;
     }
+    section.hero .mensaje-principal{
+        max-width: 850px; 
+      
+    }
+    
+    
 }
 @media only screen and (min-width: 1400px){
     header .menu .content-menu{
@@ -1017,4 +1044,22 @@ nav.lista-menu{
     nav.lista-menu ul li{
         margin: 0 5px; 
     }
+    header .menu .logo .text-logo h1{
+        font-size: 24px;
+        
+    }
+    section.hero .mensaje-principal{
+        max-width: 1050px; 
+        padding: 10px 40px;
+        /* right: 20%; */
+    }
+    section.hero .mensaje-principal p{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    nav.lista-menu ul{
+        left: -90px;
+        font-size: 22px;
+        width: 712px;
+      }
 }
