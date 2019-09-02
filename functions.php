@@ -36,9 +36,10 @@ function perubroker_scripts_styles(){
 
     wp_enqueue_script('jquery');
     wp_enqueue_script('swiper', get_template_directory_uri().'/js/swiper.min.js',array('jquery'),'3.4.2',true);
-    wp_enqueue_script('leaflet','https://unpkg.com/leaflet@1.5.1/dist/leaflet.js',array('swiper'),"1.5.1",true);
+    // wp_enqueue_script('leaflet','https://unpkg.com/leaflet@1.5.1/dist/leaflet.js',array('swiper'),"1.5.1",true);
     wp_enqueue_script('aos','https://unpkg.com/aos@2.3.1/dist/aos.js',array(),"2.3.1",true);
-    wp_enqueue_script('script', get_template_directory_uri().'/js/script.js',array('jquery','swiper','leaflet','aos'),'1.0.0',true);
+    // wp_enqueue_script('focus',get_template_directory_uri().'/js/focus-min.js',array(),"1.0.0",true);
+    wp_enqueue_script('script', get_template_directory_uri().'/js/script.js',array('jquery','swiper','aos'),'1.0.0',true);
 
 }
 add_action('wp_enqueue_scripts','perubroker_scripts_styles');

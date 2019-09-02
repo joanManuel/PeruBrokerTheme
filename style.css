@@ -12,7 +12,7 @@
 */
 
 body{
-
+    font-family: 'Roboto','arial';
 }
 h1{
     font-family: 'Bookman Old Style', arial;;
@@ -366,7 +366,7 @@ section.nosotros .contenido-item{
         /* background: green; */
     }
     /*FIN TABS*/
-    .nosotros ul li{
+    .nosotros ul.swiper-wrapper li{
         list-style: none; 
         padding: 10px 22.5px;   
         font-family: Roboto;
@@ -520,6 +520,15 @@ section.reportes{
    
     overflow: hidden;
 }
+section.reportes p{
+
+}
+section.reportes a {
+ color: #111F65;
+}
+section.reportes h3 {
+ text-align: left;
+}
 section.reportes .select {
     position: relative;
     display: flex;
@@ -555,7 +564,7 @@ section.reportes .select {
   }
   /* Transition */
   section.reportes .select:hover::after {
-    color:yellow;
+    color:#666666;
   }
   section.reportes h3{
       margin-top: 40px;
@@ -588,7 +597,7 @@ section.reportes .content-reportes .table-responsive{
 
 .section_title p {
     text-align: justify;
-    padding: 14px 0 0 0;
+    padding: 14px 15px 0 15px;
     margin: 10px 0 0 0;
 }
 
@@ -633,6 +642,13 @@ section.reportes .content-reportes figure{
 }
 section.reportes .content-reportes figure img{
  width: 100%;
+ height: auto;
+}
+
+section.reportes .formulario-reportes{
+    width: 100%;
+    max-width: 400px;
+    height: auto;;
 }
 /* FIN REPORTES*/
 
@@ -1063,3 +1079,4 @@ nav.lista-menu{
         width: 712px;
       }
 }
+

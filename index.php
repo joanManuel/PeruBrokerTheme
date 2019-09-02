@@ -23,6 +23,7 @@
                 
                 <!-- <div class="chat">
                     <img class="icon-messenger" src="<?php echo get_template_directory_uri(); ?>/img/messenger.svg" alt="">
+
                 </div> -->
             </section>
         </div>
